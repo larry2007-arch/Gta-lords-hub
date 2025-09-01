@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTA LORD'S HUB - News </title>
-    <link rel="stylesheet" href="style.css"> <style>
-        /* Or simply copy the style block from index.html here for simplicity */
+    <title>GTA LORD'S HUB - News</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,12 +14,34 @@
             flex-direction: column;
             min-height: 100vh;
         }
-        header, nav, footer {
+        header {
             background-color: #1a1a1a;
             padding: 20px 0;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            color: #fff;
+        }
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header-content img {
+            height: 40px;
+            margin: 0 10px;
+        }
+        header h1 {
+            color: #ff8c00;
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
         }
         nav ul {
             list-style: none;
@@ -51,30 +72,46 @@
             background-color: rgba(0, 0, 0, 0.4);
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            text-align: left; /* Align text left for readability */
+            text-align: left;
         }
         .content-page h2 {
             color: #ff8c00;
             text-align: center;
             margin-bottom: 30px;
         }
-        .content-page p, .content-page ul {
-            line-height: 1.6;
-            margin-bottom: 15px;
+        .news-list {
+            list-style: none;
+            padding: 0;
         }
-         .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .video-grid iframe {
-            width: 100%;
-            height: 200px; /* Adjust as needed */
+        .news-item {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
         }
-         footer {
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+        .news-item h3 {
+            margin: 0 0 10px 0;
+            color: #fff;
+            font-size: 1.5em;
+        }
+        .news-item p {
+            margin: 0 0 10px 0;
+            color: #ccc;
+        }
+        .news-item a {
+            color: #ff8c00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+        footer {
             background-color: #1a1a1a;
             color: #fff;
             padding: 20px 0;
@@ -98,20 +135,18 @@
         .footer-links a:hover {
             color: #ff8c00;
         }
-         #currentYear {
+        #currentYearFooter {
             color: #ff8c00;
         }
-         /* Responsive Adjustments (copy from main CSS) */
-         @media (max-width: 768px) {
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
             header h1 {
                 font-size: 2em;
             }
             nav ul li {
                 margin: 10px 10px;
             }
-             .video-grid {
-                 grid-template-columns: 1fr;
-             }
         }
         @media (max-width: 480px) {
             header h1 {
@@ -143,7 +178,8 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li> <li><a href="news.html">News</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="https://store.playstation.com/en-gb/pages/latest" target="_blank">Get Games</a></li>
             <li><a href="entertainment.html">Entertainment</a></li>
@@ -151,10 +187,25 @@
     </nav>
 
     <main class="content-page">
-        <h2>News</h2>
-        <p>Welcome to the GTA LORD'S Updates section.</p>
-
-        </main>
+        <h2>Latest News & Updates</h2>
+        <ul class="news-list">
+            <li class="news-item">
+                <h3><a href="gta6-release-date-2026.html">GTA 6 Release Date Pushed Back to 2026</a></h3>
+                <p>Rockstar Games' parent company, Take-Two Interactive, has pushed back the launch of Grand Theft Auto 6 to **May 26, 2026**.</p>
+                <p><small>Published: September 1, 2025</small></p>
+            </li>
+            <li class="news-item">
+                <h3><a href="forza-horizon-6-rumors.html">Forza Horizon 6 Rumors Point to a Japanese Setting</a></h3>
+                <p>New credible rumors suggest the next installment in the Forza Horizon series will be set in Japan with a possible announcement at **Tokyo Game Show 2025**.</p>
+                <p><small>Published: September 1, 2025</small></p>
+            </li>
+            <li class="news-item">
+                <h3><a href="gta-sa-updates-vr-port.html">GTA San Andreas Gets New Updates & VR Port on Hold</a></h3>
+                <p>The mobile version of GTA San Andreas receives a new patch, while its highly-anticipated VR port is put on hold indefinitely.</p>
+                <p><small>Published: September 1, 2025</small></p>
+            </li>
+        </ul>
+    </main>
 
     <footer>
         <div class="footer-links">
@@ -168,4 +219,4 @@
         document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
     </script>
 </body>
-</html>
+    </html>
