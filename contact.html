@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA LORD'S HUB - Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom, #007bff, #00c6ff);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header-content img {
+            height: 40px;
+            margin: 0 10px;
+        }
+        header h1 {
+            color: #ff8c00;
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff8c00;
+        }
+        .content-page {
+            flex-grow: 1;
+            padding: 40px 20px;
+            max-width: 960px;
+            margin: 20px auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .content-page h2 {
+            color: #ff8c00;
+            margin-bottom: 30px;
+        }
+        .content-page p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .content-page a {
+            color: #ff8c00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content-page a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+            margin-top: auto;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: #ff8c00;
+        }
+        #currentYearFooter {
+            color: #ff8c00;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav ul li {
+                margin: 10px 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            .header-content img {
+                height: 30px;
+            }
+            nav ul li a {
+                font-size: 1em;
+            }
+            .footer-links {
+                flex-direction: column;
+            }
+            .footer-links a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://i.imgur.com/yD9fQ0w.png" alt="Flame icon">
+            <h1>GTA LORD'S HUB</h1>
+            <img src="https://i.imgur.com/yD9fQ0w.png" alt="Flame icon">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://store.playstation.com/en-gb/pages/latest" target="_blank">Get Games</a></li>
+            <li><a href="entertainment.html">Entertainment</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-page">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feedback, or inquiries, please feel free to reach out to us. We value your input and will get back to you as soon as possible.</p>
+        <p>You can contact us directly at:</p>
+        <p><strong><a href="mailto:gtalord@gmail.com">gtalord@gmail.com</a></strong></p>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="terms-privacy.html">Terms & Privacy</a>
+        </div>
+        <p>&copy; <span id="currentYearFooter"></span> GTA LORD'S HUB. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
+    </script>
+</body>
+  </html>
