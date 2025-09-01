@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News: GTA 6 Release Date Pushed Back to 2026</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: linear-gradient(to bottom, #007bff, #00c6ff); color: #fff; display: flex; flex-direction: column; min-height: 100vh; }
+        header { background-color: #1a1a1a; padding: 20px 0; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+        .header-content { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
+        .header-content img { height: 40px; margin: 0 10px; }
+        header h1 { color: #ff8c00; margin: 0; font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+        nav { background-color: #333; padding: 15px 0; text-align: center; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav ul li { margin: 0 20px; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: color 0.3s ease; }
+        nav ul li a:hover { color: #ff8c00; }
+        .content-page { flex-grow: 1; padding: 40px 20px; max-width: 960px; margin: 20px auto; background-color: rgba(0, 0, 0, 0.4); border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); text-align: left; }
+        .content-page h2 { color: #ff8c00; text-align: center; margin-bottom: 30px; }
+        .content-page p { line-height: 1.6; margin-bottom: 15px; }
+        .news-image { width: 100%; height: auto; border-radius: 8px; margin: 20px 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+        footer { background-color: #1a1a1a; color: #fff; padding: 20px 0; text-align: center; box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); margin-top: auto; }
+        .footer-links { display: flex; justify-content: center; margin-bottom: 15px; flex-wrap: wrap; }
+        .footer-links a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; transition: color 0.3s ease; }
+        .footer-links a:hover { color: #ff8c00; }
+        #currentYearFooter { color: #ff8c00; }
+        @media (max-width: 768px) { header h1 { font-size: 2em; } nav ul li { margin: 10px 10px; } }
+        @media (max-width: 480px) { header h1 { font-size: 1.5em; } .header-content img { height: 30px; } nav ul li a { font-size: 1em; } .footer-links { flex-direction: column; } .footer-links a { margin: 5px 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://i.imgur.com/yD9fQ0w.png" alt="Flame icon">
+            <h1>GTA LORD'S HUB</h1>
+            <img src="https://i.imgur.com/yD9fQ0w.png" alt="Flame icon">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://store.playstation.com/en-gb/pages/latest" target="_blank">Get Games</a></li>
+            <li><a href="entertainment.html">Entertainment</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-page">
+        <h2>GTA 6 Release Date Pushed Back to 2026</h2>
+        <p>In a move widely anticipated by industry insiders, Rockstar Games' parent company, Take-Two Interactive, has officially confirmed a new launch window for the highly anticipated Grand Theft Auto 6. The game, originally slated for a late 2025 release, will now arrive on **May 26, 2026**.</p>
+        <p>Sources close to the project suggest the delay was made to ensure the game meets the company's famously high standards for quality and polish. The pushback provides the development team with crucial extra time to perfect what is expected to be one of the biggest gaming launches in history.</p>
+        <p>The game is confirmed to be a **current-gen exclusive**, launching only on PlayStation 5 and Xbox Series X/S, with a PC release expected to follow later. Recent leaks have provided a tantalizing glimpse of the game's map, which appears to be even larger than previously rumored. The narrative will feature dual protagonists, Jason and Lucia, in a story that promises to subvert some of the series' past tropes.</p>
+        <img src="https://i.imgur.com/l4g0lH8.jpg" alt="GTA 6 logo with a blue backdrop" class="news-image">
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="terms-privacy.html">Terms & Privacy</a>
+        </div>
+        <p>&copy; <span id="currentYearFooter"></span> GTA LORD'S HUB. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
